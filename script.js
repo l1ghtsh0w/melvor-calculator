@@ -147,8 +147,8 @@ function submitForm()
    let daysNeeded = hoursNeeded / 24;
    minutesNeeded = minutesNeeded % 60;
    secondsNeeded = secondsNeeded % 60;
-   hoursNeeded = hoursNeeded.toFixed(2);
-   minutesNeeded = Math.ceil(minutesNeeded);
+   daysNeeded = daysNeeded.toFixed(2);
+   minutesNeeded = minutesNeeded.toFixed(1);
    secondsNeeded = Math.ceil(secondsNeeded);
    neededXp = neededXp.toLocaleString();
    neededActs = neededActs.toLocaleString();
@@ -157,19 +157,15 @@ function submitForm()
    {
       hoursNeeded = hoursNeeded % 24;
       hoursNeeded = hoursNeeded.toFixed(2);
-      daysNeeded = daysNeeded.toFixed(2);
       document.getElementById("result").innerHTML = "To get from <span class='rslt'>level " + currentLvl + "</span> to <span class='rslt'>level " + desiredLvl + "</span>, you need <span class='rslt'>" + neededXp + " experience</span>, <br />requiring around <span class='rslt'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='rslt'>" + daysNeeded + " days</span><br /><span class='rslt'>" + hoursNeeded + " hours</span><br /><span class='rslt'>" + minutesNeeded + " minutes</span><br /><span class='rslt'>" + secondsNeeded + " seconds</span>";
    }
    else if (hoursNeeded == 24)
    {
-      hoursNeeded = hoursNeeded.toFixed(2);
-      daysNeeded = daysNeeded.toFixed(2);
       document.getElementById("result").innerHTML = "To get from <span class='rslt'>level " + currentLvl + "</span> to <span class='rslt'>level " + desiredLvl + "</span>, you need <span class='rslt'>" + neededXp + " experience</span>, <br />requiring around <span class='rslt'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='rslt'>1 day</span><br /><span class='rslt'>" + minutesNeeded + " minutes</span><br /><span class='rslt'>" + secondsNeeded + " seconds</span>";
    }
    else if (hoursNeeded >= 1)
    {
       hoursNeeded = hoursNeeded.toFixed(2);
-      daysNeeded = daysNeeded.toFixed(2);
       document.getElementById("result").innerHTML = "To get from <span class='rslt'>level " + currentLvl + "</span> to <span class='rslt'>level " + desiredLvl + "</span>, you need <span class='rslt'>" + neededXp + " experience</span>, <br />requiring around <span class='rslt'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='rslt'>" + hoursNeeded + " hours</span><br /><span class='rslt'>" + minutesNeeded + " minutes</span><br /><span class='rslt'>" + secondsNeeded + " seconds</span>";
    }
    else

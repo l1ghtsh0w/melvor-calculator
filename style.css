@@ -4,6 +4,26 @@
    width: 25%;
 }
 
+.explain
+{
+   border: 2px solid black;
+   font-size: 14pt;
+   margin: 10px;
+   padding: 10px;
+   width: 45%;
+}
+
+.emph1
+{
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.emph2
+{
+   font-style: italic;
+}
+
 .input
 {
    font-weight: bold;
@@ -28,6 +48,7 @@
    display: none;
    font-size: 18pt;
    margin-top: 20px;
+   padding: 10px;
    width: 65%;
 }
 
