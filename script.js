@@ -147,8 +147,8 @@ function submitForm()
    let daysNeeded = hoursNeeded / 24;
    minutesNeeded = minutesNeeded % 60;
    secondsNeeded = secondsNeeded % 60;
-   daysNeeded = Math.ceil(daysNeeded);
-   hoursNeeded = Math.ceil(hoursNeeded);
+   daysNeeded = daysNeeded.toFixed(2);
+   hoursNeeded = hoursNeeded.toFixed(2);
    minutesNeeded = Math.ceil(minutesNeeded);
    secondsNeeded = Math.ceil(secondsNeeded);
    neededXp = neededXp.toLocaleString();
