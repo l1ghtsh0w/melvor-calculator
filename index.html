@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Melvor Calculator</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <!-- Need:
+      -Current LVL/Exp
+      -Wanted LVL
+      Seconds per action
+      EXP per action
+      -->
+      <center>
+         <form id="calc" name="calc" class="calc-form">
+            <div class="input">
+               <label for="crntLvl">Current Level</label><br />
+               <input type="text" id="crntLvl" name="crntLvl" /><br />
+            </div>
+            <div class="input">
+               <label for="crntXp">Current XP</label><br />
+               <input type="text" id="crntXp" name="crntXp" /><br />
+            </div>
+            <div class="input">
+               <label for="dsrdLvl">Desired Level</label><br />
+               <input type="text" id="dsrdLvl" name="dsrdLvl" /><br />
+            </div>
+            <div class="input">
+               <label for="secsPerAct">Seconds Per Action</label><br />
+               <input type="text" id="secsPerAct" name="secsPerAct" /><br />
+            </div>
+            <div class="input">
+               <label for="expPerAct">Experience Per Action</label><br />
+               <input type="text" id="expPerAct" name="expPerAct" /><br />
+            </div>
+            <br />
+            <div class="bttn">
+               <a href="#" id="submit" onclick="submitForm()">Submit</a>
+            </div>
+            <div class="bttn">
+               <a href="#" id="reset" onclick="reset()">Reset</a>
+            </div>
+         </form>
+         <div id="result" class="result"></div>
+      </center>
+   </body>
+</html>
