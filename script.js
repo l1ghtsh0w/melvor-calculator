@@ -157,20 +157,20 @@ function submitForm()
    {
       hoursNeeded = hoursNeeded % 24;
       hoursNeeded = hoursNeeded.toFixed(2);
-      document.getElementById("result").innerHTML = "To get from <span class='rslt'>level " + currentLvl + "</span> to <span class='rslt'>level " + desiredLvl + "</span>, you need <span class='rslt'>" + neededXp + " experience</span>, <br />requiring around <span class='rslt'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='rslt'>" + daysNeeded + " days</span><br /><span class='rslt'>" + hoursNeeded + " hours</span><br /><span class='rslt'>" + minutesNeeded + " minutes</span><br /><span class='rslt'>" + secondsNeeded + " seconds</span>";
+      document.getElementById("result").innerHTML = "To get from <span class='emph1'>level " + currentLvl + "</span> to <span class='emph1'>level " + desiredLvl + "</span>, you need <span class='emph1'>" + neededXp + " experience</span>, <br />requiring about <span class='emph1'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='emph1'>" + daysNeeded + " days</span><br /><span class='emph1'>" + hoursNeeded + " hours</span><br /><span class='emph1'>" + minutesNeeded + " minutes</span><br /><span class='emph1'>" + secondsNeeded + " seconds</span>";
    }
    else if (hoursNeeded == 24)
    {
-      document.getElementById("result").innerHTML = "To get from <span class='rslt'>level " + currentLvl + "</span> to <span class='rslt'>level " + desiredLvl + "</span>, you need <span class='rslt'>" + neededXp + " experience</span>, <br />requiring around <span class='rslt'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='rslt'>1 day</span><br /><span class='rslt'>" + minutesNeeded + " minutes</span><br /><span class='rslt'>" + secondsNeeded + " seconds</span>";
+      document.getElementById("result").innerHTML = "To get from <span class='emph1'>level " + currentLvl + "</span> to <span class='emph1'>level " + desiredLvl + "</span>, you need <span class='emph1'>" + neededXp + " experience</span>, <br />requiring about <span class='emph1'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='emph1'>1 day</span><br /><span class='emph1'>" + minutesNeeded + " minutes</span><br /><span class='emph1'>" + secondsNeeded + " seconds</span>";
    }
    else if (hoursNeeded >= 1)
    {
       hoursNeeded = hoursNeeded.toFixed(2);
-      document.getElementById("result").innerHTML = "To get from <span class='rslt'>level " + currentLvl + "</span> to <span class='rslt'>level " + desiredLvl + "</span>, you need <span class='rslt'>" + neededXp + " experience</span>, <br />requiring around <span class='rslt'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='rslt'>" + hoursNeeded + " hours</span><br /><span class='rslt'>" + minutesNeeded + " minutes</span><br /><span class='rslt'>" + secondsNeeded + " seconds</span>";
+      document.getElementById("result").innerHTML = "To get from <span class='emph1'>level " + currentLvl + "</span> to <span class='emph1'>level " + desiredLvl + "</span>, you need <span class='emph1'>" + neededXp + " experience</span>, <br />requiring about <span class='emph1'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='emph1'>" + hoursNeeded + " hours</span><br /><span class='emph1'>" + minutesNeeded + " minutes</span><br /><span class='emph1'>" + secondsNeeded + " seconds</span>";
    }
    else
    {
-      document.getElementById("result").innerHTML = "To get from <span class='rslt'>level " + currentLvl + "</span> to <span class='rslt'>level " + desiredLvl + "</span>, you need <span class='rslt'>" + neededXp + " experience</span>, <br />requiring around <span class='rslt'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='rslt'>" + minutesNeeded + " minutes</span><br /><span class='rslt'>" + secondsNeeded + " seconds</span>";
+      document.getElementById("result").innerHTML = "To get from <span class='emph1'>level " + currentLvl + "</span> to <span class='emph1'>level " + desiredLvl + "</span>, you need <span class='emph1'>" + neededXp + " experience</span>, <br />requiring about <span class='emph1'>" + neededActs + " actions</span>.<br />This will take around:<br /><span class='emph1'>" + minutesNeeded + " minutes</span><br /><span class='emph1'>" + secondsNeeded + " seconds</span>";
    }
    document.getElementById("result").style.display = "block";
 }

@@ -1,22 +1,27 @@
+body
+{
+   font-size: 14pt;
+   overflow: scroll;
+}
+
 .calc-form
 {
    border: 2px solid black;
+   padding: 10px;
    width: 25%;
 }
 
 .explain
 {
    border: 2px solid black;
-   font-size: 14pt;
    margin: 10px;
    padding: 10px;
-   width: 45%;
+   width: 50%;
 }
 
 .emph1
 {
    font-weight: bold;
-   text-transform: uppercase;
 }
 
 .emph2
@@ -24,10 +29,14 @@
    font-style: italic;
 }
 
+input
+{
+   margin-bottom: 10px;
+}
+
 .input
 {
    font-weight: bold;
-   line-height: 25px;
 }
 
 .bttn
@@ -42,14 +51,18 @@
    width: 30%;
 }
 
+.submit
+{
+   margin-top: -10px;
+}
+
 .result
 {
    border: 2px solid black;
    display: none;
-   font-size: 18pt;
    margin-top: 20px;
    padding: 10px;
-   width: 65%;
+   width: 55%;
 }
 
 .rslt
